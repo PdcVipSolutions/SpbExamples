@@ -1,0 +1,89 @@
+|-
+|{{{type}}}
+|align="center"|{{{release}}}
+|{{{description}}}
+|align="center"|{{{target}}}
+|align="center"|{{{pe}}}
+
+
+This is an example of the evolution of the project development beginning from the initial idea till the today status.
+The very easy game have been chosen as the basic idea. We do not know the initial name of this game thus we call it Polyline.
+
+Each release expands the functionality of the application. Moving along this way the code is modified and restructured or the only code is restructured and modified.
+
+'''Game description'''
+:It is shown the flat playing field. The dimension of the field is M x N.
+
+''Game rules''
+:Each player on his turn adds the new point.  This point must prolong  the existing Polyline  (or start the Polyline, if it doesn't exist). 
+:The resulting  Polyline must be non interrupted and each move can be done using  any of  end of the line. 
+:The player, which locks the  line (the point is set on the polyline), wins.
+
+{| cellspacing="0" border="1"
+|-
+!SRC
+!Release
+!Short Description
+!User<br/>Interface
+!PE
+
+{{example_chain
+|type=file
+|release=1
+|description=[[Game Polyline. release 1|Players: computer and human. The initial move by choice]]
+|target=Console
+|pe='''+'''
+}}
+
+{{example_chain
+|type=file
+|release=2
+|description=[[Game Polyline. release 2|New: Players - objects. The initial move of the computer - random]]
+|target=Console
+|pe='''+'''
+}}
+
+{{example_chain
+|type=file
+|release=3
+|description=[[Game Polyline. release 3|New: N players. The type of the player (computer or human) - by choice]]
+|target=Console
+|pe='''+'''
+}}
+
+{{example_chain
+|type=file
+|release=4
+|description=[[Game Polyline. release 4|New:  Safe computer's move - random. The code of the player-computer restructured]]
+|target=Console
+|pe='''+'''
+}}
+
+{{example_chain
+|type=file
+|release=5
+|description=[[Game Polyline. release 5|New: Computer's move based on the prognosis on the depth ''K'' moves. The code reorganized]]
+|target=Console
+|pe='''+'''
+}}
+
+{{example_chain
+|type=file
+|release=6
+|description=[[Game Polyline. release 6|New: Multiple plays mode. Easy expansion of the list of players. The size of the field mutable. The code reorganized]]
+|target=Console
+|pe='''+'''
+}}
+
+{{example_chain
+|type=file
+|release=7
+|description=[[Game Polyline. release 7|New: MultiLanguage feature. The code reorganized]]
+|target=Console
+|pe='''+'''
+}}
+
+|}
+[[en:]]
+[[Category:Examples]]
+[[Category:Games 1+]]

@@ -1,0 +1,27 @@
+﻿/*****************************************************************************
+
+                        Copyright (c) 2013 My Company
+
+******************************************************************************/
+
+#include @"TaskWindow\TaskWindow.ph"
+
+% privately used packages
+#include @"pfc\gui\controls\groupBox\groupBox.ph"
+#include @"pfc\gui\controls\iconControl\iconControl.ph"
+#include @"pfc\gui\controls\versionControl\versionControl.ph"
+#include @"WinTimerContainer_1\WinTimerContainer.ph"
+#include @"TaskWindow\Toolbars\Toolbars.ph"
+#include @"pfc\vpi\vpiToolbar\vpiToolbar.ph"
+#include @"pfc\resourceIdentifiers.ph"
+#include @"pfc\gui\controls\messageControl\messageControl.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+#include @"TaskWindow\AboutDialog.cl"
+
+% implementations
+#include @"TaskWindow\TaskWindow.pro"
+#include @"TaskWindow\AboutDialog.pro"

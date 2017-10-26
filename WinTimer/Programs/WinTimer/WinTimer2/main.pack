@@ -1,0 +1,19 @@
+﻿/*****************************************************************************
+
+                        Copyright (c) 2013 SPBrSolutions branch
+
+******************************************************************************/
+
+#include @"main.ph"
+
+% privately used packages
+#include @"TaskWindow\TaskWindow.ph"
+#include @"pfc\application\Exe\exe.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"

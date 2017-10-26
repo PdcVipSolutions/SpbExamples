@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+		
+		<title>Untitled Document</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /></head>
+<body>
+		<h1><strong>Tutorial Project. Release 13</strong></h1>
+		<h2>The Goal</h2>
+		<p>The demonstration of practices of the Vip-based programming:</p>
+		<ul>
+		  <li> the 
+		    ways of the communication of the main applicaion with the parts of 
+		    the application, which are placed to the DLL (Dynamically Linked Library).</li>
+		  <li>the practice of the rising and handling  the 
+		    exceptions. </li>
+    </ul>
+	<h2>The Code </h2>
+	<p>The Release 13 contains the set of strongly dependent projects - the project of the 
+			main applicaion and projects of three DLLs, where&nbsp;DLL&nbsp;has&nbsp; the 
+	special project to buiuld it. </p>
+	<p>The set of projects contains:
+	</p>
+		<ul>
+			<li>The Project ModelsDLL.vipprj (generates the&nbsp; DLL), where models of the computer 
+			strategies of the game Computer0, Computer1, Computer2&nbsp;are placed.
+		    </li><li> The Project  Computer3DLL.vipprj (generates the DLL), where the model of the strategy Computer3 is  placed.</li>
+		    <li>The Project HumanInterfaceDLL.vipprj (generates the DLL), where classes realated to 
+			the&nbsp;HumanInterface are placed. This DLL is called using the library, which used while 
+			the main applicaion building. </li>
+		    <li>
+				Project Polyline13_ObjWindows.vipprj - the project of the main executable applicaion.			</li>
+		</ul>
+		<h2>The Functionality</h2>
+		<ul>
+		  <li>The new strategy model Computer3 appeared</li>
+          <li>The behavior of applications of the Release 13 is the same as the behavior of 
+		    applications of the Release 11, 12.</li>
+	</ul>
+		<h2>Build  notes </h2>
+		<p>Please, see first your version speciality</p>
+		<table style="width: 744px; height: 117px;" id="table1" border="1" cellpadding="0" cellspacing="0">
+  <tbody>
+    
+    <tr>
+      <td height="25"><table style="width: 743px; height: 145px;" border="1">
+        <tbody><tr><th style="text-align: center;">Project file name</th><th style="text-align: center;">Can build PE</th><th style="text-align: center;">Can run PE</th></tr><tr>
+          <td class="style1"><span style="font-weight: bold;">Polyline13\Programs\ObjectWin\</span><strong>Polyline13_ObjWindows.</strong><strong>vipprj</strong></td><td style="text-align: center;">- &nbsp; </td><td style="text-align: center;">+&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="style1"><span style="font-weight: bold;">Polyline13\Programs\ModelsDLL\</span><strong>ModelsDLL.</strong><strong>vipprj</strong></td><td style="text-align: center;">-</td><td></td>
+        </tr>
+        <tr>
+          <td class="style1"><span style="font-weight: bold;">Polyline13\Programs\HumanInterfaceDLL\</span><strong>HumanInterfaceDLL.</strong><strong>vipprj</strong></td><td style="text-align: center;">-</td><td></td>
+        </tr>
+        <tr>
+          <td class="style1"><span style="font-weight: bold;">Polyline13\Programs\Computer3Dll\</span><strong>Computer3Dll.</strong><strong>vipprj</strong></td><td style="text-align: center;">-</td><td></td>
+        </tr>
+        
+        
+      </tbody></table></td>
+      
+      
+      
+    </tr>
+  </tbody>
+</table>
+<p>Open and build projects:</p>
+		<ul>
+		  <li>Programs\Computer3Dll\Computer3Dll.vipprj</li>
+		  <li>Programs\HumanInterfaceDll\HumanInterfaceDLL.vipprj</li>
+		  <li>Programs\ModelsDll\ModelsDll.vipprj.
+The warning while the compilation points to the incorrect declaration.
+It is done to demonstrate the reaction on the exception in the DLL. </li>
+		  <li>Programs\ObjectWin\Polyline13_ObjWindows.vipprj</li>
+    </ul>
+		<p>To build projects of the Polyline12 release  the IDE variable <strong>SpbSolutions</strong> must be set to the <strong>SpbVipTools</strong> directory.</p><h2>Run notes </h2>
+		<ul>
+		  <li>The application corresponding to the project <strong>Programs\ObjectWin\Polyline13_ObjWindows.</strong><span style="font-weight: bold;">vipprj</span> must be invoked;</li>
+		  <li>The language of the application may be defined in the  command line by the language indentifier:
+	        <ul>
+            <li> en - English</li>
+	        <li> ru - Russian</li>
+            </ul>
+		  </li>
+		  <li>When running the program from the IDE, the parameter  of the language must be placed to the field <strong>Project Settings\Run  Options\Run Arguments</strong>, available from menu <strong>Project\Settings...</strong></li>
+    </ul>
+		<p></p>
+		<p>&nbsp;</p>
+</body></html>

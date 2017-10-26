@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title></head>
+
+<body>
+<h1>Release 11</h1>
+<p><strong>Copyright (c) Victor Yukhtenko </strong></p>
+<h2>The Goal</h2>
+<p>To demonstrate the basic approaches of the VIP-based  programming:</p>
+<ul>
+  <li>The difference in the traditional Console and object-oriented  approach (ObjectConsole* and GUI).</li>
+  <li>The strong separation of the User Interface and  logical part </li>
+  <li>Creation of Vip-based libraries</li>
+</ul>*The ObjectConsole - &nbsp;it is just the tutorial joke.
+<h2>Code</h2>
+<h3>User interfaces</h3>
+<p> Release 11 is the set of projects, which has the same game logic
+organization, but differs by the User Interface type - &#1057;&#1086;nsole,
+ObjectConsole, Windows.</p>
+<h3>The use of VIP-based libraries</h3>
+<p>Some components are represented same time as the source code (.PRO)
+and as the libraries (.LIB). Alternative projects presented in the
+Release 11. The text of the appropriate .CMD file to build libraries
+also presented.</p>
+<p>To build libraries the application '''lib'''  (Microsoft Linker Stub 7.10.3077) has been used.</p>
+<h3>Logic and UI strongly separated</h3>
+<p> In all projects of the Release 11 the code, representing the logic
+and the code representing the User Interface are strongly separated. </p>
+<p>All Projects of the Release 11 family use the common set of classes,
+which supports the logic of the game, configuration settings and the
+game managing.<br />
+  &nbsp;<br /> The same time each project uses
+its own concept of the User Interface. It makes the possibility to
+create other user interface implementations and to use other UI
+concepts based say on HTML or XML. It is possible even to use other
+programming languages to create User Interface.</p>
+<h3>Some hints on the universality</h3>
+<p> The structure of the code of the common used logical part gives the
+possibility to use the logical part with no change to organize the set
+of similar flat games. The only one JuniourJudge module must be
+replaced by the module with the same class name and interface and with
+the new rules support.</p>
+<p>The new concepts of models of players must be created  accordingly.</p>
+<h2>Functionality</h2>
+<ul>
+  <li>Different UserInterfaces (Console, Object Console, GUI) with the same game logic</li>
+</ul>
+<h2>Known problems</h2>
+<p> The Release 11 set of projects has been grown on the basis of
+Release 10 project. The interaction between players is organized as the
+hidden (deeply recursive) process, where the tail recursion demand is
+not fulfilled. </p>
+<p>Because of this reason after some value of the multiplication
+&lt;board size&gt;*&lt;amount of games in the serial games&gt; the call
+stack is overloaded and the application disappears. </p>
+<p>This problem is fixed  in the release 12.</p>
+<h2>Build  notes </h2>
+<p>Please, see first <a href="VersionReference.html">your version speciality</a></p>
+<p>Open and build projects:</p>
+<ul>
+  <li> Polyline11_Console - console application</li>
+  <li>Polyline11_ObjectConsole object-oriented console</li>
+  <li>Polyline11_ObjWindows - Windows PFC/GUI</li>
+</ul>
+<p>Run command file Programs\<strong>BuildHumanInterfaceLib.cmd</strong></p>
+<p>Open and build projects:</p>
+<ul><li>Polyline11_ConsoleLib - the same but the User  Interface placed to the library</li>
+  <li>  Polyline11_ObjectConsoleLib - the same but the User  Interface placed to the library</li>
+  <li>  Polyline11_ObjWindowsLib - Windows PFC/GUI, the User  Interface placed to the library</li>
+</ul>
+<p>To build projects of the Polyline11 release  the IDE variable SpbSolutions must be set to the SpbVipTools directory.</p><h2>Run notes </h2>
+<ul>
+  <li>The language of the application may be defined in the  command line by the language indentifier:
+    <ul>
+      <li> en - English</li>
+      <li> ru - Russian</li>
+    </ul>
+  </li>
+  <li>When running the program from the IDE, the parameter  of the language must be placed to the field <strong>Project Settings\Run  Options\Run Arguments</strong>, available from menu <strong>Project\Settings...</strong></li>
+</ul>
+</body></html>

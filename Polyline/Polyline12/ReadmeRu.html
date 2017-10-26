@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Релиз 12</title></head>
+
+<body>
+<h1>Семейство проектов Polyline 12 </h1>
+<h2><strong>Цель</strong></h2>
+<p>Семейство проектов Release 11, как отмечалось в комментариях к нему,
+имело недостаток - переполнение стека вызовов, начиная с некоторых
+значений произведения <strong>РазмерИгровогоПоля х ЧислоИгрВРежимеСериальныхИгр</strong> и, соответственно, прекращение работы программы.</p>
+<p>Release 12 имеет  своей целью исправление этого недостатка.</p>
+<h2>Код</h2>
+<ul><li><strong>Набор проектов</strong><br />
+  Набор проектов Release 12 отличается от того, что входило в  состав Release 11:
+      <ul>
+        <li> В Release 12 проектов <strong><em>Console,  ConsoleLib, ObjectConsoleLib</em></strong> нет.</li>
+        <li>Проект ObjectWin содержит три варианта ObjectWin0, ObjectWin1, ObjectWin2 демонстрируют последовательность модификации кода.</li>
+        <li>Проекты  ObjectWinLibX соответствуют проектам ObjectWinX, но пользовательский интерфейс представлен библиотекой </li>
+        <li>          Проект ObjectConsole содержит только окончательное решение и служит для проверки совместимости и работоспособности.</li>
+      </ul>
+</li>
+  <li><strong>Добавление тестового игрока - Computer00<br />
+  </strong>В целях проверки устойчивости проекта на играх большой размерности создан специальный игрок <strong>Computer00</strong>,
+который всегда делает один и тот же (специальный) ход. Модуль
+JuniourJudge, обрабатывающий ходы игроков, распознает этот ход, как
+специальный, не отображает его на игровом поле и позволяет делать
+следующий ход.</li>
+</ul>
+<p>  Пояснения к вариантам проектов ObjectWinX/Polyline12_ObjWindows (в Personal Edition - ObjectWinLibX/Polyline12_ObjWindows) </p>
+<table style="width: 1206px; height: 163px;" border="1">
+  <tbody><tr>
+    <td><div align="center"><strong>Проект</strong></div></td>
+    <td><div align="center"><strong>Краткая информация </strong></div></td>
+  </tr>
+  <tr>
+    <td>ObjectWin0/Polyline12_ObjWindows0</td>
+    <td>"Прическа"
+кода для обеспечения прозрачности взаимодействия моделей игроков и
+модуля SeniourJudge. Добавление специальлной тестовой модели игрока
+Computer00. Константа <strong>playLimit_C</strong> в модуле
+JuniourJudge определяет число ходов. Игрок Computer00 может быть
+запущен один (играющий сам с собой). На значении константы <strong>playLimit_C</strong>=10000 можно наблюдать поломку программы. </td>
+  </tr>
+  <tr>
+    <td><div align="center">ObjectWin1/Polyline12_ObjWindows1</div></td>
+    <td>Первая
+модификация кода с целью обеспечения устойчивости. Рекурсивный принцип
+передачи ходов от игрока к игроку заменен на итерационный. Корректность
+механизмов режима мультиигр и механизма остановки игры не
+затрагивалась. Тестовая игра игрока Computer00 обеспечивается на
+практически любом значении константы <strong>playLimit_C</strong> (тестируется успешно на значении 100000).</td>
+  </tr>
+  <tr>
+    <td><div align="center">ObjectWin2/Polyline12_ObjWindows2</div></td>
+    <td>Окончательная
+редакция кода. Обеспечена корректность всех режимов. Тестируется
+успешно на работе игрока Computer00 при значении константы <strong>playLimit_C</strong>=100000 с использованием  режима мультиигр. </td>
+  </tr>
+</tbody></table>
+<h2>Функционирование</h2>
+<ul>
+  <li>Функционально Release 12 ничем не отличается от Release 11.</li>
+  <li>Добавлен технологический игрок Computer00 для имитации большого числа ходов. </li>
+</ul>
+<h2>Построение</h2>
+<p>Ознакомьтесь предварительно с <a href="VersionReference.html">особенностями имеющихся у вас версий </a></p>
+<p>Откройте и постройте проекты:</p>
+<ul><li>Programs\ObjectWin0\Polyline12_ObjWindows0.vipprj</li>
+  <li>Programs\ObjectWin1\Polyline12_ObjWindows1.vipprj</li>
+  <li>ProgramsDir\ObjectWin2\Polyline12_ObjWindows2.vipprj</li>
+</ul>
+<p>Выполните командный файл Programs\<strong>BuildHumanInterfaceLib.cmd</strong></p>
+<p>Откройте и постройте проекты, использующие библиотеки пользовательских интерфейсов:</p>
+<ul><li>Programs\ObjectWinLib0\Polyline12_ObjWindowsLib0.vipprj</li>
+  <li>Programs\ObjectWinLib1\Polyline12_ObjWindowsLib1.vipprj</li>
+  <li>Programs\ObjectWinLib2\Polyline12_ObjWindowsLib2.vipprj</li>
+</ul>
+<p>Игрок Computer00 может быть единственным игроком, при этом он должен быть объявлен как стартующий игрок. </p>
+<p>Как и прежде, для построения проектов Polyline12 переменная
+SpbSolutions среды программирования IDE должна быть определена как
+маршрут к директории SpbVipTools. </p><h2>Запуск</h2>
+<ul>
+  <li>Язык  приложения определяется помещением в командной строке идентификатора языка:
+    <ul>
+        <li> ru  - русский</li>
+      <li> en  - английский</li>
+    </ul>
+  </li>
+  <li>При  запуске из среды IDE параметр языка помещается в поле формы <strong>Project  Settings\Run Options\Run Arguments</strong>, получаемой из меню <strong>Project\Settings...</strong></li>
+</ul>
+</body></html>

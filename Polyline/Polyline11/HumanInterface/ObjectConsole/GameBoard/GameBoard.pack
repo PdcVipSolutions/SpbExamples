@@ -1,0 +1,25 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"GameBoard\GameBoard.ph"
+
+% privately used packages
+#include @"HumanInterface.ph"
+#include @"ConsoleEventSource\ConsoleEventSource.ph"
+#include @"pfc\math\math.ph"
+#include @"pfc\string\string.ph"
+#include @"ConsoleTextControl\ConsoleTextControl.ph"
+#include @"Interfaces\PolyLineInterfaces.ph"
+#include @"pfc\std\std.ph"
+#include @"packs\logic\NotificationAgency\NotificationAgency.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"GameBoard\gameBoard.pro"

@@ -1,0 +1,29 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+******************************************************************************/
+
+#include @"PlayerProperties_UI\PlayerProperties_UI.ph"
+
+#requires @"PlayerProperties_UI\playerProperties_UI.dlg"
+#requires @"PlayerProperties_UI\legendDrawControl.ctl"
+% privately used packages
+#include @"pfc\gui\controls\integerControl\integerControl.ph"
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"GameSettings\GameSettings.ph"
+#include @"pfc\math\math.ph"
+#include @"pfc\namedValue\namedValue.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"packs\Gui\bitmapControl\bitmapControl.ph"
+#include @"resourceIdentifiers.i"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"PlayerProperties_UI\legendDrawControl.pro"
+#include @"PlayerProperties_UI\playerProperties_UI.pro"

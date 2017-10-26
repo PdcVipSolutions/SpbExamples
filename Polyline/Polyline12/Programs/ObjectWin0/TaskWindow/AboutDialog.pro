@@ -1,0 +1,65 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+******************************************************************************/
+
+implement aboutDialog
+    inherits dialog
+    open core, vpiDomains
+
+clauses
+    display(Parent) = Dialog :-
+        Dialog = new(Parent),
+        Dialog:show().
+
+clauses
+    new(Parent) :-
+        dialog::new(Parent),
+        generatedInitialize().
+
+% This code is maintained automatically, do not update it manually. 16:34:07-17.8.2010
+facts
+    version1_ctl : versioncontrol.
+    version3_ctl : versioncontrol.
+    version2_ctl : versioncontrol.
+    version_ctl : versioncontrol.
+
+predicates
+    generatedInitialize : ().
+clauses
+    generatedInitialize():-
+        setFont(vpi::fontCreateByName("MS Sans Serif", 8)),
+        setText("About"),
+        setRect(rct(122,26,322,137)),
+        setModal(true),
+        setDecoration(titlebar([closebutton()])),
+        setState([wsf_NoClipSiblings]),
+        IconProject = iconControl::new(This),
+        IconProject:setIcon(application_icon),
+        IconProject:setPosition(12, 4),
+        ButtonOk = button::newOk(This),
+        ButtonOk:setText("&OK"),
+        ButtonOk:setPosition(76, 96),
+        ButtonOk:setSize(48, 12),
+        ButtonOk:defaultHeight := false(),
+        GroupBox = groupBox::new(This),
+        GroupBox:setText(""),
+        GroupBox:setPosition(4, 22),
+        GroupBox:setSize(192, 70),
+        version1_ctl := versioncontrol::new(GroupBox),
+        version1_ctl:setPosition(3, 22),
+        version1_ctl:setSize(184, 10),
+        version1_ctl:setText("File Version: {FileVersionA}.{FileVersionB}.{FileVersionC}.{FileVersionD}"),
+        version3_ctl := versioncontrol::new(GroupBox),
+        version3_ctl:setPosition(3, 46),
+        version3_ctl:setSize(184, 10),
+        version3_ctl:setText("Company Name: {CompanyName}"),
+        version2_ctl := versioncontrol::new(GroupBox),
+        version2_ctl:setPosition(3, 34),
+        version2_ctl:setSize(184, 10),
+        version2_ctl:setText("Copyright: {LegalCopyright}"),
+        version_ctl := versioncontrol::new(GroupBox),
+        version_ctl:setPosition(3, 0),
+        version_ctl:setSize(184, 20),
+        version_ctl:setText("File Description: {FileDescription}").
+% end of automatic code
+end implement aboutDialog

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+		
+		<title>Untitled Document</title><meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /></head>
+
+	<body>
+		<h1>Учебный Проект. Релиз 13</h1>
+		<h2>Цель</h2>
+		<p>Демонстрация приемов программирования:</p>
+		<ul>
+		  <li>Cпособы взаимодействия главного приложения с частями 
+		    проекта, помещенными в DLL (Dynamically Linked Library - динамически 
+		    связываемые библиотеки). </li>
+		  <li>генерация и обработка 
+		    исключений. </li>
+    </ul>
+	<h2>Код</h2>
+		<h3>Набор проектов</h3>
+		<p>Релиз 13 состоит из набора строго взаимосвязанных проектов - проекта главного 
+			приложения и трех DLL, для каждой из которых предусмотрен самостоятельный 
+		проект. </p>
+		<p>Набор проектов содержит: </p>
+		<ul>
+			<li>
+				Проект ModelsDLL.vipprj (генерирует DLL), в который помещены модели компьютерных 
+				стратегий игры Computer0, Computer1, Computer2.</li>
+			<li>
+				Проект Computer3DLL.vipprj (генерирует DLL), в который помещена модель стратегии игры 
+				Computer3.			</li>
+			<li>
+				Проект HumanInterfaceDLL.vipprj (генерирует DLL), в который помещены классы, 
+				отноящиеся к HumanInterface. Эта DLL вызывается с помощью библиотеки, которая 
+				связывается с главным приложением в процессе построения приложения.			</li>
+			<li>
+				Проект&nbsp;<strong>Polyline13_ObjWindows.vipprj</strong> - проект главного исполняемого приложения.
+			</li>
+		</ul>
+		<h2>Функционирование</h2>
+		<ul>
+		  <li>Добавлена новая модель стратегии Computer3 </li>
+		  <li>Функционально Release 13 ничем не отличается от Release 12 (и 11).</li>
+    </ul>
+	<h2>Построение</h2>
+		<p>Ознакомьтесь предварительно с особенностями имеющихся у вас версий<a href="VersionReference.html"> </a></p>
+		
+		<table style="width: 744px; height: 117px;" id="table1" border="1" cellpadding="0" cellspacing="0">
+  <tbody>
+    
+    <tr>
+      <td height="25"><table style="width: 743px; height: 145px;" border="1">
+        <tbody><tr><th style="text-align: center;">Имя проектного файла</th><th style="text-align: center;">можно построить<br />&nbsp;с помощью PE</th><th style="text-align: center;">Мжно исполнить <br />при наличии PE</th></tr><tr>
+          <td class="style1">Polyline13\Programs\ObjectWin\<strong>Polyline13_ObjWindows.vipprj</strong></td><td style="text-align: center;">- &nbsp; </td><td style="text-align: center;">+&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="style1">Polyline13\Programs\ModelsDLL\<strong>ModelsDLL.</strong><strong>vipprj</strong></td><td style="text-align: center;">-</td><td></td>
+        </tr>
+        <tr>
+          <td class="style1">Polyline13\Programs\HumanInterfaceDLL\<strong>HumanInterfaceDLL.</strong><strong>vipprj</strong></td><td style="text-align: center;">-</td><td></td>
+        </tr>
+        <tr>
+          <td class="style1">Polyline13\Programs\Computer3Dll\<strong>Computer3Dll.</strong><strong>vipprj</strong></td><td style="text-align: center;">-</td><td></td>
+        </tr>
+        
+        
+      </tbody></table></td>
+      
+      
+      
+    </tr>
+  </tbody>
+</table>
+<p>Откройте и постройте проекты:</p>
+		<ul>
+          <li> Programs/ModelsDLL/ModelsDLL.prj.<br />
+            Предупреждение в процессе компиляции указывает на специально сделанную 
+            ошибочную декларацию. Это сделано для демонстрации реакции на ошибку в DLL. </li>
+          <li> Programs/Computer3DLL/Computer3DLL.prj</li>
+          <li> Programs/HumanInterfaceDLL/HumanInterfaceDLL.prj</li>
+          <li> Programs/ObjectWin/Polyline13_ObjWindows.prj </li>
+          </ul>
+		<p>Как и прежде, для построения проектов Polyline13 переменная <span style="font-weight: bold;">SpbSolutions</span> среды программирования IDE должна быть определена как маршрут к директории SpbVipTools. </p><h2>Запуск</h2>
+		<ul>
+          <li>Язык  приложения определяется помещением в командной строке идентификатора языка:
+            <ul>
+                <li> ru  - русский</li>
+              <li> en  - английский</li>
+            </ul>
+          </li>
+		  <li>При  запуске из среды IDE параметр языка помещается в поле формы <strong>Project  Settings\Run Options\Run Arguments</strong>, получаемой из меню <strong>Project\Settings...</strong></li>
+    </ul>
+</body></html>

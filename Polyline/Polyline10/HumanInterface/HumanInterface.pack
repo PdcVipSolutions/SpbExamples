@@ -1,0 +1,24 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"HumanInterface\HumanInterface.ph"
+
+% privately used packages
+#include @"pfc\exception\common_exception\common_exception.ph"
+#include @"HumanInterface\PolylineTextRu\PolylineTextRu.ph"
+#include @"HumanInterface\PolylineTextEn\PolylineTextEn.ph"
+#include @"pfc\string\string.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\console\console.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"HumanInterface\humanInterface.pro"

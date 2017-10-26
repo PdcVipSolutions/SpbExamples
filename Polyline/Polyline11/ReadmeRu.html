@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Polyline1. Readme.</title></head>
+
+<body>
+<h1>Учебный проект Polyline. Релиз 11 </h1>
+<p><strong>Copyright (c) Victor Yukhtenko </strong></p>
+<h2>Цель</h2>
+<p>Демонстрация приемов программирвоания на языке Visual Prolog:</p>
+<ul>
+  <li>Создание объектно-ориентированного инструментария для консольных приложений *;</li>
+  <li>Создание  Windows-приложений на базе GUI пакетов; </li>
+  <li>Создание приложений со строго изолированными логической частью и пользовательским интерфейсом; </li>
+  <li>Создание библиотек (*.lib) на базе VIP.</li>
+</ul><span style="font-style: italic;">Примечание:</span><br />*Объектно-ориентированная консоль - &nbsp;учебная шутка!
+<h2>Функциональность</h2>
+<ul>
+  <li>Логика игры не изменилась, три типа пользовательских интерфейсов: Консоль, объектная Консоль, Windows<br />
+  </li>
+</ul>
+<h2>Построение</h2>
+<p>Ознакомьтесь предварительно с <a href="VersionReference.html">особенностями имеющихся у вас версий </a></p>
+<p>Откройте и постройте проекты:</p>
+<ul>
+  <li> Polyline11_Console - консольное приложение</li>
+  <li>Polyline11_ObjectConsole объектно-ориентированное консольное приложение</li>
+  <li>Polyline11_ObjWindows - Windows PFC/GUI</li>
+</ul>
+<p>Выполните командный файл Programs\<strong>BuildHumanInterfaceLib.cmd</strong></p>
+<p>Откройте и постройте проекты, использующие библиотеки пользовательских интерфейсов:</p>
+<ul>
+  <li>Polyline11_ConsoleLib;</li>
+  <li> Polyline11_ObjectConsoleLib;</li>
+  <li> Polyline11_ObjWindowsLib</li>
+</ul>
+<p>Для построения проектов переменная SpbSolutions должна быть установлена как маршрут к директории, где располагается SpbVipTools</p><h2>Запуск</h2>
+<ul>
+  <li>Язык  приложения определяется помещением в командной строке идентификатора языка:
+    <ul>
+      <li> ru  - русский</li>
+      <li> en  - английский</li>
+    </ul>
+  </li>
+  <li>При  запуске из среды IDE параметр языка помещается в поле формы <strong>Project  Settings\Run Options\Run Arguments</strong>, получаемой из меню  <strong>Project\Settings...</strong></li>
+</ul>
+</body></html>

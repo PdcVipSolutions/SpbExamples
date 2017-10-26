@@ -1,0 +1,30 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"PlayerProperties\PlayerProperties.ph"
+
+% privately used packages
+#include @"pfc\list\list.ph"
+#include @"pfc\namedValue\namedValue.ph"
+#include @"ConsoleEventSource\ConsoleEventSource.ph"
+#include @"Interfaces\PolyLineInterfaces.ph"
+#include @"GetColor\GetColor.ph"
+#include @"ConsoleTextControl\ConsoleTextControl.ph"
+#include @"pfc\console\console.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\string\string.ph"
+#include @"consoleButtonControl\consoleButtonControl.ph"
+#include @"ConsoleListViewControl\ConsoleListViewControl.ph"
+#include @"ConsoleEditControl\ConsoleEditControl.ph"
+#include @"packs\logic\NotificationAgency\NotificationAgency.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"PlayerProperties\playerProperties.pro"

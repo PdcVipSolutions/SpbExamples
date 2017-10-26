@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Release 12</title></head>
+<body>
+<h1><strong>Polyline 12 Projects Family </strong></h1>
+<h2>The Goal</h2>
+<p>The demonstration of practices of the Vip-based programming:</p>
+<ul>
+  <li>Solving the problem of the call stack overloading in the endless deep recursion.<br />  
+  The Release 11 projects family had the problem - the overloading of the call stack on some values of the multiplication <strong>TheSizeOfTheBoard*AmountOfRounds</strong> and appropriate  breakdown of the application.<br />
+  The purpose of the Release 12 is to solve this problem.  </li>
+</ul>
+<h2>The Code</h2>
+<ul>
+  <li><strong>The set of projects</strong><br />
+    The set of project in Release 12 differs from the set of projects of the Release11:
+    <ul>
+      <li>Release 12 doesn't contain projects <strong>Console, ConsoleLib, ObjectConsole, ObjectConsoleLib</strong>;</li>
+      <li>Project
+ObjectWin contains three variants ObjectWin0, ObjectWin1, ObjectWin2 .
+These variants show the phases of the modification of the code;</li>
+      <li>Projects ObjectWinLibX corrspond to projects ObjectWinX, but HumanInterface represented as the library; </li>
+      <li>The
+project ObjectConsole contains the only final solutions. The purpose of
+the project ObjectConsole is testing and compatibility check. </li>
+    </ul>
+  </li>
+  <li><strong>The new test model</strong> of the Player Computer00 added<br />
+The only purpose of the creation of the model of the player Computer00
+is to simulate the behavior of the application on the large amount of
+moves, which players make.</li>
+</ul>
+<ul>
+  <table border="1">
+    <tbody><tr>
+      <td><div align="center"><strong>Project</strong></div></td>
+      <td><div align="center"><strong>Short description </strong></div></td>
+    </tr>
+    <tr>
+      <td>ObjectWin0/Polyline12_ObjWindows</td>
+      <td><p>The
+code of the class SeniourJudge is modified to make it clear the of the
+interaction of players and the class JuniourJudge. The player model
+Computer00 added. The Player Computer00 makes always the same special
+move. The class JuniourJudge recognizes this special move, doesn't show
+it on the board and informs the SeniourJudge about move occurrence.
+Thus the next move may be done. The maximal amount of moves is defined
+by the constant <strong>playLimit_C</strong> in the class JuniourJudge. The problem appears when <strong>playLimit_C</strong>=10000.</p></td>
+    </tr>
+    <tr>
+      <td>ObjectWin1/Polyline12_ObjWindows</td>
+      <td>The
+first step of the modification of the code to solve the problem. The
+recursive mechanism of the organization of moves is replaced by the
+iterative mechanism. The application works stable when <strong>playLimit_C</strong>=100000. The multigame mode  and the interruption process is not modified correctly.</td>
+    </tr>
+    <tr>
+      <td>ObjectWin2/Polyline12_ObjWindows</td>
+      <td>The final version. All modes can run correctly. Test player Computer00 can play, when <strong>playLimit_C</strong>=100000.</td>
+    </tr>
+  </tbody></table>
+</ul>
+<h2>Functionality</h2>
+<ul>
+  <li>  The behavior  of applications of the Release 12 is the same as the behavior  of applications of the Release 11 </li>
+  <li>The new test model of the Player Computer00 added (endless moves simulator). <br />
+  </li>
+</ul>
+<h2>Build  notes </h2>
+<p>Please, see first <a href="VersionReference.html">your version speciality</a></p>
+<p>Open and build projects:</p>
+<ul><li>Programs\ObjectWin0\Polyline12_ObjWindows0.vipprj</li>
+  <li>Programs\ObjectWin1\Polyline12_ObjWindows1.vipprj</li>
+  <li>ProgramsDir\ObjectWin2\Polyline12_ObjWindows2.vipprj</li>
+</ul>
+<p>Run command file Programs\<strong>BuildHumanInterfaceLib.cmd</strong></p>
+<p>Open and build projects (if needed):</p>
+<ul><li>Programs\ObjectWinLib0\Polyline12_ObjWindows0.vipprj</li>
+  <li>Programs\ObjectWinLib1\Polyline12_ObjWindows1.vipprj</li>
+  <li>Programs\ObjectWinLib2\Polyline12_ObjWindows2.vipprj</li>
+</ul>
+<p>To build projects of the Polyline12 release  the IDE variable <strong>SpbSolutions</strong> must be set to the <strong>SpbVipTools</strong> directory.</p><h2>Run notes </h2>
+<ul>
+  <li>Player Computer00 may be involved as the single player and must be assigned as the Starter.</li>
+  <li>The language of the application may be defined in the  command line by the language indentifier:
+    <ul>
+      <li> en - English</li>
+      <li> ru - Russian</li>
+    </ul>
+  </li>
+  <li>When running the program from the IDE, the parameter  of the language must be placed to the field <strong>Project Settings\Run  Options\Run Arguments</strong>, available from menu <strong>Project\Settings...</strong></li>
+</ul>
+<p>&nbsp;</p>
+</body></html>

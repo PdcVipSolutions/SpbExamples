@@ -1,0 +1,30 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+******************************************************************************/
+
+#include @"GameSettings\GameSettings.ph"
+
+#requires @"GameSettings\gameSettings.ctl"
+% privately used packages
+#include @"pfc\gui\controls\groupBox\groupBox.ph"
+#include @"pfc\gui\controls\checkButton\checkButton.ph"
+#include @"pfc\gui\controls\integerControl\integerControl.ph"
+#include @"pfc\gui\controls\textControl\textControl.ph"
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"HumanInterface.ph"
+#include @"packs\logic\NotificationAgency\NotificationAgency.ph"
+#include @"pfc\vpi\vpi.ph"
+#include @"Interfaces\PolyLineInterfaces.ph"
+#include @"PlayerProperties_UI\PlayerProperties_UI.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\string\string.ph"
+#include @"resourceIdentifiers.i"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"GameSettings\gameSettings.pro"

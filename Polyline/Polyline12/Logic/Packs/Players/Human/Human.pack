@@ -1,0 +1,21 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"Human\Human.ph"
+
+% privately used packages
+#include @"pfc\windowsapi\locale_api\locale_api.ph"
+#include @"pfc\stream\stream.ph"
+#include @"packs\logic\NotificationAgency\NotificationAgency.ph"
+#include @"pfc\string\string.cl"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"Human\human.pro"

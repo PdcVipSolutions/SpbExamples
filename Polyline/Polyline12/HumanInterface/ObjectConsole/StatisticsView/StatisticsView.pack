@@ -1,0 +1,22 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"StatisticsView\StatisticsView.ph"
+
+% privately used packages
+#include @"ConsoleEventSource\ConsoleEventSource.ph"
+#include @"Interfaces\PolyLineInterfaces.ph"
+#include @"pfc\std\std.ph"
+#include @"pfc\string\string.ph"
+#include @"packs\logic\NotificationAgency\NotificationAgency.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"StatisticsView\statisticsView.pro"

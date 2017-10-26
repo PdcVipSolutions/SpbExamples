@@ -1,0 +1,19 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+******************************************************************************/
+
+#include @"main.ph"
+
+% privately used packages
+#include @"pfc\vpi\vpi.ph"
+#include @"Game\Game.ph"
+#include @"pfc\application\exe\exe.ph"
+#include @"taskWindow\taskWindow.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"

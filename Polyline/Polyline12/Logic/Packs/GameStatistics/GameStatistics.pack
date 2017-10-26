@@ -1,0 +1,19 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"GameStatistics\GameStatistics.ph"
+
+% privately used packages
+#include @"packs\logic\NotificationAgency\NotificationAgency.ph"
+#include @"pfc\list\list.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"GameStatistics\gameStatistics.pro"
