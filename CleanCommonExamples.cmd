@@ -5,6 +5,7 @@ dir /s/b vip7*.dll >>dd.bat
 dir /s/b *.obj >>dd.bat
 dir /s/b *.env >>dd.bat
 dir /s/b *.map >>dd.bat
+dir /s/b *.options >>dd.bat
 dir /s/b *.bro >>dd.bat
 dir /s/b *.rlt >>dd.bat
 dir /s/b *.rc >>dd.bat
@@ -18,6 +19,6 @@ dir /s/b $*.* >>dd.bat
 dir /s/b @*.* >>dd.bat
 dir /s/b capdos.* >>dd.bat
 dir /s/b dd.* >>dd.bat
-..\SpbVipTools\Bin\delfiles.exe dd.bat
+..\SpbVipTools\Bin\delfiles.exe dd.bat > nul
 del dd.bat
 pause
