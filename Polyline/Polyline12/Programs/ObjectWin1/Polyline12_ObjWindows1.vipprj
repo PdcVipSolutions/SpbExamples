@@ -3,7 +3,7 @@
   <include_directory-list>
     <include_directory>.</include_directory>
     <include_directory>$(ProDir)</include_directory>
-    <include_directory>$(SpbSolutions)</include_directory>
+    <include_directory>$(SpbVipTools)</include_directory>
     <include_directory>$(SpbExamples)Polyline\Polyline12\</include_directory>
     <include_directory>$(SpbExamples)Polyline\Polyline12\Logic\Packs\</include_directory>
     <include_directory>$(SpbExamples)PolyLine\Polyline12\Logic\Packs\SeniourJadge1\</include_directory>
@@ -97,6 +97,7 @@
     <item-map filename="$(ProDir)pfc\memory\weakPointer\weakPointer.pack" />
     <item-map filename="$(ProDir)pfc\memory\weakReference\weakReference.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\compareAndSwap\compareAndSwap.pack" />
+    <item-map filename="$(ProDir)pfc\multithread\criticalSectionSupport\criticalSectionSupport.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\monitorQueue\monitorQueue.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\multiThread.pack" />
     <item-map filename="$(ProDir)pfc\namedValue\namedValue.pack" />
@@ -109,6 +110,7 @@
     <item-map filename="$(ProDir)pfc\registry\registry.pack" />
     <item-map filename="$(ProDir)pfc\std\std.pack" />
     <item-map filename="$(ProDir)pfc\stream\inputStreamSupport\inputStreamSupport.pack" />
+    <item-map filename="$(ProDir)pfc\stream\inputSupport_mode\inputSupport_mode.pack" />
     <item-map filename="$(ProDir)pfc\stream\outputStreamSupport\outputStreamSupport.pack" />
     <item-map filename="$(ProDir)pfc\stream\stream.pack" />
     <item-map filename="$(ProDir)pfc\string\string.pack" />
@@ -119,6 +121,7 @@
     <item-map filename="$(ProDir)pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.pack" />
     <item-map filename="$(ProDir)pfc\vpi\vpiDomains\vpiDomains.pack" />
     <item-map filename="$(ProDir)pfc\vpi\vpitoolbar\vpitoolbar.pack" />
+    <item-map filename="$(ProDir)pfc\windowsApi\clipboard_api\clipboard_api.pack" />
     <item-map filename="$(ProDir)pfc\windowsApi\com_api\basicInterfaces\basicInterfaces.pack" />
     <item-map filename="$(ProDir)pfc\windowsApi\com_api\com_api.pack" />
     <item-map filename="$(ProDir)pfc\windowsApi\com_api\comDomains\comDomains.pack" />
@@ -177,9 +180,9 @@
     <item-map filename="$(SpbExamples)Polyline\Polyline12\Logic\Packs\Players\GenericComputer\GenericComputer.pack" />
     <item-map filename="$(SpbExamples)Polyline\Polyline12\Logic\Packs\Players\Human\Human.pack" />
     <item-map filename="$(SpbExamples)PolyLine\Polyline12\Logic\Packs\SeniourJadge1\SeniourJudge\SeniourJudge.pack" />
-    <item-map filename="$(SpbSolutions)Packs\Gui\BitmapControl\bitmapControl.ctl" resource_id="idc" />
-    <item-map filename="$(SpbSolutions)Packs\Gui\BitmapControl\bitmapControl.pack" />
-    <item-map filename="$(SpbSolutions)Packs\Logic\NotificationAgency\NotificationAgency.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Gui\BitmapControl\bitmapControl.ctl" resource_id="idc" />
+    <item-map filename="$(SpbVipTools)Packs\Gui\BitmapControl\bitmapControl.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\NotificationAgency\NotificationAgency.pack" />
     <item-map filename="main.manifest" />
     <item-map filename="main.pack" />
     <item-map filename="TaskWindow\AboutDialog.dlg" resource_id="id_AboutDialog" />

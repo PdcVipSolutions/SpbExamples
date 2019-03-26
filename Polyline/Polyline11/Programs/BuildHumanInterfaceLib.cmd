@@ -1,3 +1,4 @@
+chcp 1251
 echo off
 set LIBMAKER= ..\..\..\..\SpbVipTools\3P_tools\MStools\lib.exe
 

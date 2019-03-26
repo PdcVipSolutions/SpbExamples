@@ -4,7 +4,7 @@
     <include_directory>.</include_directory>
     <include_directory>$(ProDir)</include_directory>
     <include_directory>Players</include_directory>
-    <include_directory>$(SpbSolutions)</include_directory>
+    <include_directory>$(SpbVipTools)</include_directory>
   </include_directory-list>
   <item-set key="filename">
     <item-map filename="$(ProDir)Lib\vipInit.lib" />
@@ -24,6 +24,7 @@
     <item-map filename="$(ProDir)pfc\collection\collection.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\arrayM_inline\arrayM_inline.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\mapM_redBlack\mapM_redBlack.pack" />
+    <item-map filename="$(ProDir)pfc\collection\M\queueM_fact\queueM_fact.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\setM_redBlack\setM_redBlack.pack" />
     <item-map filename="$(ProDir)pfc\collection\M\varM\varM.pack" />
     <item-map filename="$(ProDir)pfc\collection\support\collectionMsupport\collectionMsupport.pack" />
@@ -37,7 +38,6 @@
     <item-map filename="$(ProDir)pfc\console\console.pack" />
     <item-map filename="$(ProDir)pfc\core.pack" />
     <item-map filename="$(ProDir)pfc\event\event.pack" />
-    <item-map filename="$(ProDir)pfc\exception\common_exception\common_exception.pack" />
     <item-map filename="$(ProDir)pfc\exception\exception.pack" />
     <item-map filename="$(ProDir)pfc\exception\exceptionDump\exceptionDump.pack" />
     <item-map filename="$(ProDir)pfc\fileSystem\fileSystem.pack" />
@@ -52,6 +52,8 @@
     <item-map filename="$(ProDir)pfc\memory\segmented\segmentedSupport\segmentedSupport.pack" />
     <item-map filename="$(ProDir)pfc\memory\weakReference\weakReference.pack" />
     <item-map filename="$(ProDir)pfc\multiThread\compareAndSwap\compareAndSwap.pack" />
+    <item-map filename="$(ProDir)pfc\multithread\criticalSectionSupport\criticalSectionSupport.pack" />
+    <item-map filename="$(ProDir)pfc\multiThread\multiThread.pack" />
     <item-map filename="$(ProDir)pfc\namedValue\namedValue.pack" />
     <item-map filename="$(ProDir)pfc\presenter\presenter.pack" />
     <item-map filename="$(ProDir)pfc\programControl\programControl.pack" />
@@ -60,6 +62,7 @@
     <item-map filename="$(ProDir)pfc\registry\registry.pack" />
     <item-map filename="$(ProDir)pfc\std\std.pack" />
     <item-map filename="$(ProDir)pfc\stream\inputStreamSupport\inputStreamSupport.pack" />
+    <item-map filename="$(ProDir)pfc\stream\inputSupport_mode\inputSupport_mode.pack" />
     <item-map filename="$(ProDir)pfc\stream\outputStreamSupport\outputStreamSupport.pack" />
     <item-map filename="$(ProDir)pfc\stream\stream.pack" />
     <item-map filename="$(ProDir)pfc\string\string.pack" />
@@ -91,7 +94,7 @@
     <item-map filename="$(ProDir)pfc\windowsapi\time_api\time_api.pack" />
     <item-map filename="$(ProDir)pfc\windowsapi\windowsAPI.pack" />
     <item-map filename="$(ProDir)pfc\windowsApi\WinErrors\winErrors.pack" />
-    <item-map filename="$(SpbSolutions)Packs\Logic\NotificationAgency\NotificationAgency.pack" />
+    <item-map filename="$(SpbVipTools)Packs\Logic\NotificationAgency\NotificationAgency.pack" />
     <item-map filename="Competitors\Competitors.pack" />
     <item-map filename="Game\Game.pack" />
     <item-map filename="HumanInterface\HumanInterface.pack" />

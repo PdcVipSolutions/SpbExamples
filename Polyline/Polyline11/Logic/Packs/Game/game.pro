@@ -23,10 +23,7 @@ clauses
     run():-
         game_V:=game::new(),
         game_V:play().
-/*
-        Game=game::new(),
-        Game:play().
-*/
+
 clauses
     new():-
         humanInterface_V:=cHumanInterface::new(This),
