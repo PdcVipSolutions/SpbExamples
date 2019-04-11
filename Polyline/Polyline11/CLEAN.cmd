@@ -14,6 +14,6 @@ dir /s/b $*.* >>dd.bat
 dir /s/b @*.* >>dd.bat
 dir /s/b capdos.* >>dd.bat
 dir /s/b dd.* >>dd.bat
-..\..\..\cmd\delfiles.exe dd.bat  > nul
+..\..\..\SpbVipTools\Bin\delfiles.exe dd.bat  > nul
 del dd.bat
 pause

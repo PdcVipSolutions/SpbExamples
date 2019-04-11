@@ -5,7 +5,7 @@ SpbSolutions/Examples/Polyline
 ******************************************************************************/
 
 implement polylineTextRu
-    open core, humanInterface
+    open core
 
 clauses
     getText(TextID)=Text:-
