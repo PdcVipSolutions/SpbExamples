@@ -1,0 +1,23 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"main.ph"
+
+% privately used packages
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\log\Log.ph"
+#include @"pfc\log\LogConfig\logconfig.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlPort.ph"
+#include @"TaskWindow\TaskWindow.ph"
+#include @"pfc\application\exe\exe.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"

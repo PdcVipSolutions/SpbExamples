@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<language namespace="ribbon_plugins" version="10.06.2019">
+  <language_list eng="English" rus="Русский" />
+  <row id="ribbon.section.plugins" meaning="ToBeDefined">
+    <rus>Plugins</rus>
+    <eng>Plugins</eng>
+  </row>
+  <row id="ribbon.cmd.plugin.pzlGame" meaning="ToBeDefined">
+    <rus>Game_PLL14</rus>
+    <eng>Game_PLL14</eng>
+  </row>
+  <row id="ribbon.cmd.plugin.pzlGame.menulabel" meaning="ToBeDefined">
+    <rus>Game_PLL14</rus>
+    <eng>Game_PLL14</eng>
+  </row>
+  <row id="ribbon.cmd.plugin.pzlGame.tooltip" meaning="ToBeDefined">
+    <rus>Polyline14 aggregated pzlComponent</rus>
+    <eng>Polyline14 aggregated pzlComponent</eng>
+  </row>
+  <row id="ribbon.cmd.plugin.PzlWinTimerContainer4" meaning="ToBeDefined">
+    <rus>WinTimer</rus>
+    <eng>WinTimer</eng>
+  </row>
+  <row id="ribbon.cmd.plugin.PzlWinTimerContainer4.menulabel" meaning="ToBeDefined">
+    <rus>WinTimer</rus>
+    <eng>WinTimer</eng>
+  </row>
+  <row id="ribbon.cmd.plugin.PzlWinTimerContainer4.tooltip" meaning="ToBeDefined">
+    <rus>WinTimer aggregated pzlComponent</rus>
+    <eng>WinTimer aggregated pzlComponent</eng>
+  </row>
+</language>

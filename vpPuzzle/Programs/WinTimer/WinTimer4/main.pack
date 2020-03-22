@@ -1,0 +1,22 @@
+﻿/*****************************************************************************
+
+                         Prolog Development Center A/S
+
+******************************************************************************/
+
+#include @"main.ph"
+
+% privately used packages
+#include @"pfc\fileSystem\fileSystem.ph"
+#include @"pfc\log\LogConfig\logconfig.ph"
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\PzlPort.ph"
+#include @"pfc\application\exe\exe.ph"
+#include @"taskWindow\taskWindow.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"

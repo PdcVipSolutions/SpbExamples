@@ -1,0 +1,26 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"Players\Computer3\PzlComputer3.ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usePzlComputer3Original_C=true #then
+% privately used packages
+#include @"Players\Computer3\$LibVersion\Computer3.ph"
+
+#include @"pfc\stream\stream.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+    #include @"Players\Computer3\PzlComputer3.pro"
+#else
+    #include @"Players\Computer3\PzlComputer3Proxy.pro"
+#endif

@@ -1,0 +1,25 @@
+/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"Competitors\PzlCompetitors.ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usePzlCompetitorsOriginal_C=true #then
+% privately used packages
+#include @"pfc\stream\stream.ph"
+#include @"Competitors\Competitors.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+    #include @"Competitors\PzlCompetitors.pro"
+#else    
+    #include @"Competitors\PzlCompetitorsProxy.pro"
+#endif

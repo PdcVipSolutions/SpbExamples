@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Untitled Document</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+		<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+span.spelle
+	{}
+-->
+        </style>
+	</head>
+	<body>
+		<H1>Учебный Проект. Релиз 14</H1>
+		<P>Очередная итерация Учебного проекта, функциональной идеей которого является 
+			простая игра.		</P>
+		<H2>Цель</H2>
+		<P>Демонстрация взаимодействия главного приложения с частями 
+			проекта, помещенными в <span lang="ru">специальный вид </span>DLL (Dynamically Linked Library - динамически 
+			связываемые библиотеки)<span lang="ru"> - </span>Pzl-<span lang="ru">Контейнеры</span>.</P>
+		<P>Pzl<span lang="ru">-Контейнер содержит </span>Pzl<span lang="ru">-Компоненты</span>.
+		<span lang="ru">Как </span>Pzl-<span lang="ru">Контейнеры, так и </span>Pzl<span lang="ru">-Компоненты 
+		удовлетворяют соглашениям </span>Pzl-<span lang="ru">Технологии</span> (Vp Puzzle
+		<span lang="ru">Технологии</span>).</P>
+		<P><span lang="ru">Подробное описание </span>VpPuZzle <span lang="ru">
+		технологии приведено в </span><font size="3">
+		<a href="http://wikiru.visual-prolog.com/index.php?title=Категория:VpPuZzle">
+		http://wikiru.visual-prolog.com/index.php?title=Категория:VpPuZzle</a></font></P>
+		<H2>Код</H2>
+		<p>Релиз 14 содержит набор проектов, которые демонстрируют 
+    различные фазы преобразования приложения<span lang="EN-US" xml:lang="EN-US"> Polyline </span>Релиз 13 в приложение, выполненное на базе Pzl-Технологии<span lang="EN-US" xml:lang="EN-US">.</span></p>
+		<p>Набор проектов содержит:<span lang="ru" xml:lang="ru"></span></p>
+		<ul>
+		  <li>Проект<span lang="EN-US" xml:lang="EN-US"> MonoApplicaion\Polyline.prj6 </span>показыва<span lang="ru" xml:lang="ru">ет</span> как классы преобраз<span lang="ru" xml:lang="ru">ованы</span> в <span lang="EN-US" xml:lang="EN-US">pzl-</span>Компоненты.</li>
+		  <li>Проект<span lang="EN-US" xml:lang="EN-US"> MonoApplicaionLib\Polyline.prj6 &nbsp;</span>является 
+          повторением проекта <span lang="EN-US" xml:lang="EN-US">MonoApplicaion\Polyline.prj6</span> с тем отличием, что модуль<span lang="EN-US" xml:lang="EN-US"> HumanInterface </span>и модуль <span lang="EN-US" xml:lang="EN-US">&nbsp;Computer3 </span> представлены библиотеками<span lang="EN-US" xml:lang="EN-US"></span>.</li>
+		  <li> <font size="3"> <span style="mso-ansi-language: EN-US" 
+    lang="ru" xml:lang="ru">Раздел</span><span style="mso-ansi-language: EN-US" 
+    lang="EN-US" xml:lang="EN-US"> pzlBasedApplication<span class="SpellE"> </span></span> <span class="SpellE"> <span style="mso-ansi-language: EN-US" 
+    lang="ru" xml:lang="ru">содержит, в свою очередь, набор проектов - главное приложение</span><span style="mso-ansi-language: EN-US" 
+    lang="EN-US" xml:lang="EN-US"> Polyline.prj6 </span> <span style="mso-ansi-language: EN-US" lang="ru" xml:lang="ru">и проекты, 
+              соответствующие контейнерам</span></span></font>		    (см. зависимость от имеющейся у Вас версии в файле <a href="VersionReference.html">VersionReference.html</a>)
+	          <ul>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\Competitors\Competitors.prj6</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.prj6 
+		          (the source code available in the Professional Version 
+		          only)</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylineGame\PolylineGame.prj6</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylineGameStatistics\PolylineGameStatistics.prj6</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylineHumanInterface\PolylineHumanInterface.prj6 (the 
+		          source code available in the Professional Version 
+		          only)</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylineJuniourJudge\PolylineJuniourJudge.prj6</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylinePublicPlayers\PolylinePublicPlayers.prj6</font></span></span><font size="3"> </font></li>
+		        <li><span class="SpellE"><span lang="en-us" xml:lang="en-us"> <font 
+      size="3">Containers\PolylineSeniourJudge\PolylineSeniourJudge.prj6</font></span></span><font size="3"> </font></li>
+	          </ul>
+          </li>
+    </ul>
+		<h2>Функциональность</h2>
+		<p>Поведение приложения Релиза 14 ничем не отличается от 
+		  релиза 13<span lang="EN-US">.</span></p>
+		<h2>Построение</h2>
+		<p><span lang="ru">Откройте и постройте  проект</span><span lang="ru" xml:lang="ru">, в котором все </span>Pzl-<span lang="ru" xml:lang="ru">Компоненты 
+		помещены в один проект, </span> :</p>
+		<blockquote>
+			<p>Programs<SPAN style="mso-ansi-language: EN-US" 
+    lang=EN-US>\MonoApplicaion<SPAN 
+    class=SpellE>\Polyline.prj6</SPAN></SPAN></p>
+		</blockquote>
+		<p>Выполните командные файлы </p>
+		<ul>
+		  <li> Programs\BuildComputer3Lib.cmd</li>
+		  <li> Programs\BuildHumanInterfaceLib.cmd</li>
+    </ul>
+		<p><span lang="ru">При построении переменной </span>IDE SpbSolutions
+		<span lang="ru">должно быть назначено значение директории</span> 
+		VipSpbSDK.</p>
+		<p>При необходимости постройте  проект</p>
+		<blockquote>
+		  <p>Programs\MonoApplicaionLib\Polyline.prj6 </p>
+    </blockquote>
+		<p><span lang="ru">Откройте и постройте проекты</span></p>
+		<ul><li>Programs\pzlBasedApplication\Polyline.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\Competitors\Competitors.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineHumanInterfaceLib\PolylineHumanInterface.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.prj6</li>
+		  <li>Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.prj6</li>
+    </ul>
+		<p><span lang="ru">Запустите на выполнение командный файл</span> Programs\pzlBasedApplication\RegisterComponents.cmd<span lang="ru">, 
+	    который зарегистрирует компоненты</span>&nbsp;</p>
+		<p>		<span class="spelle"><span style="font-size:13.5pt"><span lang="ru"></span></span></span>Для упрощения начального построения и выполнения всех необходимых настроек имеется командный файл <strong>Build.cmd</strong> (<strong>BuildPersonal.cmd</strong> - в зависимости  от версии, детали см. в файле <a href="VersionReference.html">VersionReference.html</a>).</p>
+	    <p> Командрый файл <strong>Build.cmd</strong>:</p>
+	    <ul>
+          <li>настраивает  переменную среды  программировния IDE<strong> SpbSolutions</strong>, применительно к условиям установки;</li>
+	      <li>&quot;знает&quot;, где установлена система Visual Prolog и программа VipBuilder.exe; </li>
+	      <li>производит построение всех проектов, включая проекты в поддиректориях;</li>
+	      <li> производит построение всех необходимых Pzl-контейнеров;</li>
+	      <li>производит регистрацию всех компонентов; </li>
+	      <li>информирует об успешном или неуспешном завершении каждой операции; </li>
+	      <li> может быть использован только совместно с версией Visual Prolog CE (детали см в файле <a href="VersionReference.html">VersionReference.html</a>).</li>
+    </ul>
+	    <h2>Запуск</h2>
+	    <ul>
+	      <li>Запускается приложение, соответствующее проекту Programs<span style="mso-ansi-language: EN-US" 
+    lang="EN-US" xml:lang="EN-US">\MonoApplicaion<span 
+    class="SpellE">\Polyline.prj6,</span></span> в котором все компоненты включены в один исполняемый файл;</li>
+	      <li>Запускается приложение, соответствующее проекту Programs\pzlBasedApplication\Polyline.prj6, которое взаимодействует с компонентами, помещенными в различные контейнеры и зарегистрированными в файле PzlRegistry.pzr. Файл PzlRegistry.pzr должен находиться в той же директории, где и исполняемый .exe файл. </li>
+	      <li>Язык  приложения определяется помещением в командной строке идентификатора языка:
+            <ul>
+              <li> ru  - русский</li>
+              <li> en  - английский</li>
+            </ul>
+	      </li>
+	      <li>При  запуске из среды IDE параметр языка помещается в поле формы <strong>Project  Settings\Run Options\Run Arguments</strong>, получаемой из меню <strong>Project\Settings...</strong></li>
+    </ul>
+    </body>
+</html>

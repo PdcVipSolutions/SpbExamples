@@ -1,0 +1,21 @@
+﻿/*****************************************************************************
+                                        Visual Prolog PuZzLe Studio
+                        Copyright (c) 2003-2004, Prolog Development Center Spb Ltd.
+
+Created by: Visual Prolog PuZzLe Studio
+
+Container: Copyright (c) 2008, Prolog Development Center SPb Ltd
+Used by: Victor Yukhtenko
+******************************************************************************/
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+#include @"pfc\string\string.ph"
+
+% ONLY package headers IMPLEMENTED in this Container (originals) must be included below
+% privately used packages
+#include @"pfc\vpi\runtimelinknamesvpi.i"
+#include @"pfc\vpi\vpi.cl"
+#include @"WinTimerControl\PzlWinTimerControl.ph"
+
+% implementations
+#include @"PzlConfig\PzlConfig.pro"

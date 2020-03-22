@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Tutorial Project. Release 14</title></head>
+
+<body>
+<h1>Tutorial Project. Release 14</h1>
+<h2> The Goal</h2>
+<p> The demonstration of the implementation of the communication of the
+main application with parts of the application, which are placed to the
+special kind of DLL (Dynamically Linked Library) - PzlContainers.</p>
+<p> PzlContainers contains PzlComponents. Both PzlContainers and
+PzlComponents fit the agreements of the Pzl Technology (Vp Puzzle
+Technology).<br />
+The detailed description of the VpPuZzle technology can be seen at <a href="http://wiki.visual-prolog.com/index.php?title=Category:VpPuZzle">http://wiki.visual-prolog.com/index.php?title=Category:VpPuZzle</a>.</p>
+<h2>The Code </h2>
+<p>The Release 14 contains the set of projects, which demonstrates the
+different phases of the transformation of the application Polyline
+Release 13 to the Pzl-based application.</p>
+<p>  The set of projects contains:</p>
+<ol>
+  <li> The Project MonoApplicaion\Polyline.vipprj shows how
+classes are converted to pzl-Components. Here the wrapping approach
+been used.</li>
+  <li>
+The Project MonoApplicaionLib\Polyline.vipprj is the same project as
+the MonoApplicaion\Polyline.vipprj, but HumanInterface and player
+Computer3 represented as the libraries.</li>
+  <li> The directory
+pzlBasedApplication contains again the set of projects - the main
+application Polyline.vipprj and the set of projects, corresponding to
+containers (see version dependant details in the file <a href="VersionReference.html">VersionReference.html</a>)
+    <ul>
+      <li> Containers\Competitors\Competitors.vipprj</li>
+      <li> Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj</li>
+      <li> Containers\PolylineGame\PolylineGame.vipprj</li>
+      <li> Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj</li>
+      <li> Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj</li>
+      <li> Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj</li>
+      <li> Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj</li>
+      <li> Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj</li>
+    </ul>
+  </li>
+</ol>
+<h2>  Functionality</h2>
+<p>  The behavior of applications of the Release 14 is the same as the behavior of applications of the Release 13</p>
+<h2>  Build notes</h2>
+<p>Please, see first <a href="VersionReference.html">your version speciality</a></p>
+<p>Open and build projects:</p>
+<ul>
+  <li>Programs\MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj</li>
+</ul>
+<p>Run command files </p>
+<ul><li> Programs\BuildComputer3Lib.cmd</li>
+  <li> Programs\BuildHumanInterfaceLib.cmd</li>
+</ul>
+<p>Open and build projects:</p>
+<ul>
+  <li>Programs\MonoApplicaionLib\Polyline14_ObjWindowsLib.vipprj</li>
+  <li>Programs\pzlBasedApplication\Polyline14_ObjWindowsPzl.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\Competitors\Competitors.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayers\PolylineBlackHorsePlayers.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineBlackHorsePlayersLib\PolylineBlackHorsePlayers.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineGame\PolylineGame.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineGameStatistics\PolylineGameStatistics.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineHumanInterface\PolylineHumanInterface.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineHumanInterfaceLib\PolylineHumanInterface.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineJuniourJudge\PolylineJuniourJudge.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylinePublicPlayers\PolylinePublicPlayers.vipprj</li>
+  <li>Programs\pzlBasedApplication\Containers\PolylineSeniourJudge\PolylineSeniourJudge.vipprj</li>
+</ul>
+<p>Run command file Programs\pzlBasedApplication\RegisterComponents.cmd</p>
+<p>To build projects of the Polyline14 release  the IDE variable <strong>SpbSolutions</strong> must be set to the <span style="font-weight: bold;">SpbVipTools</span> directory.</p>
+<p>To simplify&nbsp;buiding of applications it is recommended to use <span style="font-weight: bold;">SpbVipTools\Bin\WorkSpaceManager.exe</span> application. It needs to have <span style="font-weight: bold;">VIP CE</span> version. </p><h2>Run notes </h2>
+<ul>
+  <li>The execuatable  applications correspond to  projects:
+    <ul>
+      <li>Programs\MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj or Programs\MonoApplicaionLib\Polyline.vipprj, where all components are in one application </li>
+      <li>Programs\pzlBasedApplicationPolyline14_ObjWindowsPzlvipprj,
+which communicates with components placed to pzl-Containers and
+registered in the PzlRegistry.pzr file. The file PzlRegistry.pzr must
+be in the same directory as the executable file </li>
+    </ul>
+  </li>
+  <li>The language of the application may be defined in the  command line by the language identifier:
+    <ul>
+      <li> en - English</li>
+      <li>ru - Russian    </li>
+    </ul>
+  </li>
+  <li>When running the program from the IDE, the parameter  of the language must be placed to the field <strong>Project Settings\Run  Options\Run Arguments</strong>, available from menu <strong>Project\Settings...</strong></li>
+</ul></body></html>

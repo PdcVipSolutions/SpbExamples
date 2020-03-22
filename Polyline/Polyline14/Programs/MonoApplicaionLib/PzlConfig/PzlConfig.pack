@@ -1,0 +1,23 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+******************************************************************************/
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+#include @"pfc\string\string.ph"
+
+% ONLY package headers IMPLEMENTED in this Container (originals) must be included below
+% privately used packages
+#include @"SeniourJudge\PzlSeniourJudge.ph"
+#include @"GameStatistics\PzlGameStatistics.ph"
+#include @"Competitors\PzlCompetitors.ph"
+#include @"Players\Human\PzlHuman.ph"
+#include @"Players\Computer3\PzlComputer3.ph"
+#include @"Players\Computer2\PzlComputer2.ph"
+#include @"Players\Computer1\PzlComputer1.ph"
+#include @"Players\Computer0\PzlComputer0.ph"
+#include @"JuniourJudge\PzlJuniourJudge.ph"
+#include @"HumanInterface\PzlHumanInterface.ph"
+#include @"Game\PzlGame.ph"
+
+% implementations
+#include @"PzlConfig\PzlConfig.pro"

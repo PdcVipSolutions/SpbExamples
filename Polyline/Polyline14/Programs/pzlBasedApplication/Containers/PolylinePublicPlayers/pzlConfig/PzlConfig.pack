@@ -1,0 +1,24 @@
+﻿/*****************************************************************************
+
+ Studio
+Copyright (c) Victor Yukhtenko
+
+Created by: Visual Prolog PuZzLe Studio
+
+Container:
+Copyright (c) Victor Yukhtenko
+Used by: Victor Yukhtenko
+******************************************************************************/
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+#include @"pfc\string\string.ph"
+
+% ONLY package headers IMPLEMENTED in this Container (originals) must be included below
+% privately used packages
+#include @"Players\Human\PzlHuman.ph"
+#include @"Players\Computer2\PzlComputer2.ph"
+#include @"Players\Computer1\PzlComputer1.ph"
+#include @"Players\Computer0\PzlComputer0.ph"
+
+% implementations
+#include @"PzlConfig\PzlConfig.pro"
