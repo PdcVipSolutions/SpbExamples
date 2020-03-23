@@ -1,0 +1,25 @@
+/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"Players\Human\PzlHuman.ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usePzlHumanOriginal_C=true #then
+% privately used packages
+#include @"Human\Human.ph"
+#include @"pfc\stream\stream.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+    #include @"Players\Human\PzlHuman.pro"
+#else    
+    #include @"Players\Human\PzlHumanProxy.pro"
+#endif

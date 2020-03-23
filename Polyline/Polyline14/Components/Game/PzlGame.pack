@@ -1,0 +1,25 @@
+/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"Game\PzlGame.ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usePzlGameOriginal_C=true #then
+% privately used packages
+#include @"Game\Game.ph"
+#include @"pfc\stream\stream.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+    #include @"Game\PzlGame.pro"
+#else    
+    #include @"Game\PzlGameProxy.pro"
+#endif

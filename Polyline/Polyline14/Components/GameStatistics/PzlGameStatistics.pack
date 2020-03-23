@@ -1,0 +1,25 @@
+/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"GameStatistics\PzlGameStatistics.ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usePzlGameStatisticsOriginal_C=true #then
+% privately used packages
+#include @"pfc\stream\stream.ph"
+#include @"GameStatistics\GameStatistics.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+    #include @"GameStatistics\PzlGameStatistics.pro"
+#else    
+    #include @"GameStatistics\PzlGameStatisticsProxy.pro"
+#endif

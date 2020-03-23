@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogConfigurations>
+	<LogConfig name="Common">
+		<Appenders>
+			<Appender name="Common">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_Common.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="SpbStudio">
+		<Appenders>
+			<Appender name="SpbStudio">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_SpbStudio.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="AppFrame">
+		<Appenders>
+			<Appender name="AppFrame">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_AppFrame.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="PzlAplication">
+		<Appenders>
+			<Appender name="PzlAplication">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_PzlAplication.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="PzlDataEditorServer">
+		<Appenders>
+			<Appender name="PzlDataEditorServer">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_PzlDataEditorServer.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="PzlDataViewSelectors">
+		<Appenders>
+			<Appender name="PzlDataViewSelectors">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_PzlDataViewSelectors.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="ElementaryPzlStudio">
+		<Appenders>
+			<Appender name="ElementaryPzlStudio">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_ElementaryPzlStudio.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="ElementaryPzlStudioGui">
+		<Appenders>
+			<Appender name="ElementaryPzlStudioGui">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_ElementaryPzlStudioGui.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="ElementaryPzlStudioVpi">
+		<Appenders>
+			<Appender name="ElementaryPzlStudioVpi">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_ElementaryPzlStudioVpi.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="PzlActiveImageContainer">
+		<Appenders>
+			<Appender name="PzlActiveImageContainer">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_PzlActiveImageContainer.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="SpbHostContainer">
+		<Appenders>
+			<Appender name="SpbHostContainer">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_SpbHostContainer.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="PzlDataViewSelectorExpert">
+		<Appenders>
+			<Appender name="PzlDataViewSelectorExpert">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_PzlDataViewSelectorExpert.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+	<LogConfig name="WSmanager">
+		<Appenders>
+			<Appender name="WSmanager">
+				<LogLevel>all</LogLevel>
+				<Type>fileasync</Type>
+				<ThreadPriority>low</ThreadPriority>
+				<Target>Log\%date{dd-MM}_%time{HH.mm}_WSmanager.log</Target>
+				<PatternLayout>%lineno{4d} %time: [%callerClassName::%callerPredicateName] %msg</PatternLayout>
+				<!--filter>class:entityModel;method:aaa</filter-->
+			</Appender>
+		</Appenders>
+	</LogConfig>
+</LogConfigurations>

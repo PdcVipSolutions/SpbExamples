@@ -1,0 +1,27 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+******************************************************************************/
+#include @"HumanInterface.ph"
+
+#requires @"humanInterface.dlg"
+% privately used packages
+#include @"pfc\vpi\vpiCommonDialogs\vpiCommonDialogs.ph"
+#include @"pfc\exception\exception.ph"
+#include @"Pfc\vpi\vpi.ph"
+#include @"resourceIdentifiers.i"
+#include @"pfc\list\list.ph"
+#include @"pfc\math\math.ph"
+#include @"pfc\string\string.ph"
+
+% private interfaces
+
+% private classes
+#include @"GameView\GameView.ph"
+#include @"GameSettings\GameSettings.ph"
+#include @"PolylineTextRu\PolylineTextRu.ph"
+#include @"PolylineTextEn\PolylineTextEn.ph"
+
+% implementations
+#include @"humanInterface.pro"
+
+

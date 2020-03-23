@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Polyline Project Evolutions</title></head>
+<body>
+<h1>Polyline Project Evolutions</h1>
+<p><strong>Copyright (c) Victor Yukhtenko </strong></p>
+<h2>Motivation</h2>
+<p> This is an example of the evolution of the project development. A very easy game
+has been chosen as the basic idea. We do not know the initial name of
+this game so we call it Polyline.</p>
+<p>Each development step represented as the release, so you can see
+step by step the evolution of the application. Each release expands the
+functionality of the application, moving along the way the code is
+extended, modified and restructured or only restructured and modified. </p>
+<p>Looking carefully on the code of each release you can see technique
+of the using of the Visual Prolog and advanced tools. It can be used to
+study the Visual Prolog features. </p>
+<h2>Game description</h2>
+<p> The game is played on an M x N board. </p>
+<p>Game rules</p>
+<ul>
+  <li> Each player on his turn adds a new point. The point must
+prolong the existing Polyline (or start the Polyline, if it doesn't
+exist) in the vertical or hirisontal direction only.</li>
+  <li> The resulting Polyline must be non-interrupted and each move can be taken at any of end of the line.</li>
+  <li> The player, which locks the line (the point is set on the polyline), wins.</li>
+</ul>
+<h2>Before you start</h2>
+<p>To build and study projects of series you must  install Visual Prolog programming system.</p>
+<p>The reference information regarding the features depending on the
+vesrion of the Visual Prolog&nbsp; please see
+in the file <a href="VersionReference.html">VersionReference.html</a>.</p>
+<p>Short information regarding each release may be found in the table below.</p>
+<table id="table1" border="1" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><p align="center"><strong>Release</strong><strong> </strong></p></td>
+      <td><p align="center"><strong>Short</strong><strong> Description </strong></p></td>
+      <td><p align="center"><strong>User</strong><strong><br />
+        Interface </strong></p></td>
+    </tr>
+    <tr>
+      <td><p align="center">14</p></td>
+      <td><p><span xml:lang="EN-US" lang="EN-US"><a href="#14">Demonstration of   the interaction with components based on the   pzl-Technology</a></span></p></td>
+      <td><p align="center">Win</p></td>
+    </tr>
+    <tr>
+      <td height="25"><p align="center">13</p></td>
+      <td height="25"><p><a href="#13"><span xml:lang="EN-US" lang="EN-US">The demonstration   of various ways and various techniques of the interaction with components placed   to the DLLs</span></a> <span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td height="25"><p align="center">Win</p></td>
+    </tr>
+    <tr>
+      <td height="25"><p align="center">12</p></td>
+      <td height="25"><p><a href="#12"><span xml:lang="EN-US" lang="EN-US">Multiple projects   with the User Interfaces - Windows. </span>The game dimension problem solved. </a></p></td>
+      <td height="25"><p align="center">Win</p></td>
+    </tr>
+    <tr>
+      <td height="25"><p align="center">11</p></td>
+      <td height="25"><p><a href="#11"><span xml:lang="EN-US" lang="EN-US">Multiple project with the different User Interfaces - Console, ObjectConsole, Windows. </span>Use   of Pro-based Libraries</a> </p></td>
+      <td height="25"><p align="center">Console/Win</p></td>
+    </tr>
+    <tr>
+      <td><p align="center">10</p></td>
+      <td><p><a href="#10"><span xml:lang="EN-US" lang="EN-US">Code modified.   Communication with players based on events. </span>NotificationAgency pack used. </a></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">9</p></td>
+      <td><p><a href="#9"><span xml:lang="EN-US" lang="EN-US">Code modified.   Each class generates the Object. </span></a><span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td><p align="center">Console</p></td>
+    </tr>
+    <tr>
+      <td><p align="center">8</p></td>
+      <td><p><a href="#8"><span xml:lang="EN-US" lang="EN-US">Code modified. The   structure of the project reorganized. </span>Each   class placed to separate package. </a></p></td>
+      <td><p align="center">Console</p></td>
+    </tr>
+    <tr>
+      <td><p align="center">7 </p></td>
+      <td><p><a href="#7"><span xml:lang="EN-US" lang="EN-US">MultiLanguage</span> <span xml:lang="EN-US" lang="EN-US">feature. The code   reorganized. </span></a><span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">6 </p></td>
+      <td><p><a href="#6"><span xml:lang="EN-US" lang="EN-US">Multiple plays   mode. Easy expansion of the list of players. </span>The size of the field mutable. The code reorganized. </a></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">5 </p></td>
+      <td><p><a href="#5"><span xml:lang="EN-US" lang="EN-US">Computer's move   based on the prognosis on the depth <em>K</em> moves. </span>The code reorganized. </a></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">4 </p></td>
+      <td><p><a href="#4"><span xml:lang="EN-US" lang="EN-US">Safe computer's   move - random. The code of the player-computer restructured. </span></a><span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">3 </p></td>
+      <td><p><a href="#3"><span xml:lang="EN-US" lang="EN-US">N players. The   type of the player (computer or human) - by choice. </span></a><span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">2 </p></td>
+      <td><p><a href="#2"><span xml:lang="EN-US" lang="EN-US">Players - objects.   The initial move of the computer - random. </span></a><span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+    <tr>
+      <td><p align="center">1 </p></td>
+      <td><p><a href="#1"><span xml:lang="EN-US" lang="EN-US">Players: computer   and human. The initial move by choice. </span></a><span xml:lang="EN-US" lang="EN-US"></span></p></td>
+      <td><p align="center">Console </p></td>
+    </tr>
+  </tbody>
+</table>
+<h2>Building notes </h2>
+<ol>
+  <li>Releases 1-9 projects may be built one by one without any tricks.</li>
+  <li>Since Release 10 all projects use <strong>SpbSolutions</strong> IDE variable, which must refere to the <span style="font-weight: bold;">SpbVipTools</span> directory.</li>
+  <li>Since Release 11 some projects demonstrate building libraries, thuse user must have <strong>Microsoft lib.exe</strong> program tool (see details in the release appropriate <strong>Readme.htm</strong> file). </li>
+  <li>Projects
+placed to the Release 14 (Polyline14) PzlBasedApplicaions folder need
+to run the registration procedure after buiding all projects placed to
+the <strong>Containers</strong> directory. This must be done using the Programs\pzlBasedApplication\<strong>RegisterComponents.cmd</strong> command file.</li>
+  <li>Some
+Projects since Release 12 demonstrate and use the DLL creation. So
+these projects must be built using VIP CE only (please see details the
+file <a href="VersionReference.html">VersionReference.html</a>).</li>
+  <li>All Polyline-related projects create the executable programs at Polyline\Execute folder.<br /></li>
+</ol>
+<h2>Comments to Releases </h2>
+<h3><a name="1" id="1"></a>Release 1 (Project PolyLine1)</h3>
+<p>  The initial idea taken from the <a href="http://www.hardforum.ru/f141/">Prolog-related discussion forum</a> </p>
+<p>Author of the code is Elena Efimova. </p>
+<h3><a name="2" id="2"></a>Release 2 (Project PolyLine2) </h3>
+<ul>
+  <li>If the computer makes the first move, then it is done random</li>
+  <li> The human and computer models are object-generating classes</li>
+  <li> Predicates, which relate to the human-machine interaction grouped to class HumanInterface</li><li>The size of the playing field set in the code 5x6.</li><li>The user interaface has the text (console) style. </li><li>Because of the inefficient way of the solution it is not recommended to set the the size bigger then 36 cells (6x6)</li></ul>
+<h3><a name="3" id="3"></a>Release 3 (Project PolyLine3)</h3>
+<ul>
+  <li>It can be more then 2 players</li>
+  <li> The type of each player (computer or human) is by choice </li>
+</ul>
+<h3><a name="4" id="4"></a>Release 4 (Project PolyLine4)</h3>
+<ul>
+  <li>Computer model: if no safe move found, then the next move is random (maybe extremely unsuccessful) </li>
+  <li> The structure of the class computer modified dramatically</li>
+</ul>
+<h3> <a name="5" id="5"></a>Release 5 (Project PolyLine5) </h3>
+<ul>
+  <li>The size of the board is set 10 x 10 in the code</li>
+  <li> Computer model: makes the prognosis on K steps forward</li>
+  <li> Computer model: the parameter of the depth of the prognosis is by choice</li>
+</ul>
+<h3> <a name="6" id="6"></a>Release 6 (Project PolyLine6) </h3>
+<ul><li>It is possible to create many players, each player with the own strategy</li>
+  <li> The size of the board mutable</li>
+  <li> An easy inclusion of a new players</li>
+  <li> Multiple games mode (recommended for computer models only) <br />
+  </li>
+</ul>
+<h3><a name="7" id="7"></a>Release 7 (Project PolyLine7) </h3>
+<ul>
+  <li>Using the CommandLine parameters in the code</li><li>Using CommandLine parameters in the IDE </li><li>Multilanguage feature.</li>
+  <li> Indication of the process in the multi game mode</li>
+  <li> Code reorganized.&nbsp;</li></ul><p style="font-weight: bold;">&nbsp;&nbsp;&nbsp; Build and Run notes </p><ul><li>The language of the application may be defined in the  command line by the language indetifier:     <ul><li> en - English</li><li> ru - Russian</li></ul></li><li>When
+running the program from the IDE, the parameter of the language must be
+placed to the field "Project Settings\Run Options\Run Arguments",
+available from menu "Project\Settings..."</li>
+</ul>
+<h3><a name="8" id="8"></a>Release 8 (Project PolyLine8) </h3>
+<p>Code reorganized. Each class now placed in the separate package</p>
+<h3><a name="9" id="9"></a>Release 9 (Project PolyLine9)</h3>
+<p>Code reorganized. Each class is dynamic class, which generates the object.</p>
+<h3> <a name="10" id="10"></a>Release 10 (Project PolyLine10) </h3>
+<ul>
+  <li>Multi Game mode now can be repeated</li>
+  <li> Code reorganized. Communication with Players based now on events.</li>
+  <li> The Polyline10 Project uses the NotificationAgency Package, which is a part of  the SpbVipTools.</li>
+  <li> To build the Polyline10 project you must define the IDE valriable SpbSolutions as the path to the&nbsp;SpbVipTools directory.</li>
+</ul>
+<h3><a name="11" id="11"></a>Release 11 (Folder PolyLine11) </h3>
+<ul>
+  <li> Release 11 is the set of projects, which has the same game
+logic organization, but differs by the User Interface type - &#1057;&#1086;nsole ,
+ObjectConsole, Windows. <br />
+    the use of VIP-based libraries</li>
+  <li> Some components are represented same time as the source code (.PRO) and as the libraries (.LIB).</li>
+</ul>
+<p> See more <a href="Polyline11/ReadmeEn.html">details at ...</a> </p>
+<h3><a name="12" id="12"></a>Release 12 (Folder PolyLine12)</h3>
+<p> The Release 11 projects family had the problem - the overloading of
+the call stack on some values of the multiplication
+TheSizeOfTheBoard*AmountOfRounds and appropriate breakdown of the
+application.</p>
+<p>The purpose of the Release 12 is to solve this problem. </p>
+<h5>The set of projects</h5>
+<p>  The set of project in Release 12 differs from the set of projects of the Release11:</p>
+<ul>
+  <li> First, Release 12 doesn't contain Console-based projects.</li>
+  <li> Second, project ObjectWin contains now three
+variants ObjectWin0, ObjectWin1, ObjectWin2 and Projects ObjectWinLibX,
+where the UI is presented as the library. These variants show the
+phases of the modification of the code. </li>
+  
+</ul>
+<h5><strong> Functionality</strong></h5>
+<ul>
+  <li> The behavior of applications of the Release 12 is the same as the behavior of applicaons of the Release 11</li>
+  <li>
+The new test model of the Player Computer00 added. The only purpose of
+the creation of the model of the player Computer00 is to simulate the
+behavior of the application on the large amount of moves, which players
+make.</li>
+</ul> See more <a href="Polyline12/ReadmeEn.html">details at ...</a>
+<h3> <a name="13" id="13"></a>Release 13 (Folder PolyLine13) </h3>
+<h5>The set of projects</h5>
+<p> The Release 13 contains the set of strongly dependent projects -
+the project of the main application and projects of three DLLs, where
+DLL has the special project to build it.</p>
+<p> The set of projects contains:</p>
+<ul>
+  <li> The Project ModelsDLL (generates the DLL), where models of
+the computer strategies of the game Computer0, Computer1, Computer2 are
+placed.</li>
+  <li> The Project Computer3DLL (generates the DLL), where the model of the strategy Computer3 is placed.</li>
+  <li>
+The Project HumanInterfaceDLL (generates the DLL), where classes
+related to the HumanInterface are placed. This DLL is called using the
+library, which used while building the main application. </li>
+  <li>The Project Polyline13_ObjWindows - the project of the main executable application</li>
+  <li> The same functionality</li>
+</ul>
+<h5>Functionality </h5>
+<p>The behavior of applications of the Release 13 is the same as the
+behavior of applications of the Release 11, 12. The only difference is
+the DLL-related violations exceptions reacting.</p><p> See more <a href="Polyline13/ReadmeEn.html">details at ...</a></p>
+<h3> <a name="14" id="14"></a>Release 14 (Folder PolyLine14) </h3>
+<h5>The set of projects</h5>
+<p>The Release 14 contains the set of projects, which demonstrates the
+different phases of the transformation of the application Polyline
+Release 13 to the application based on the Pzl-Technology (see
+http://wiki.visual-prolog.com/index.php?title=Category:VpPuZzle).</p>
+<p>  The set of projects contains:</p>
+<ul>
+  <li> The Project MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj shows how classes are converted to pzl-Components.</li>
+  <li>
+The Project MonoApplicaionLib\Polyline14_ObjWindowsLib.vipprj is the same project as
+MonoApplicaion\Polyline14_ObjWindows_Mono.vipprj, where HumanInterface and player Computer3
+represented as the libraries.</li>
+  <li> The directory
+pzlBasedApplication contains again the set of projects - the main
+application Polyline14_ObjWindowsPzl.vipprj and the set of projects, where each project
+corresponds to the pzlContainer, where basic components of the
+application are placed.</li>
+</ul>
+<h5> Functionality</h5>
+<p> The behavior of applications of the Release 14 is the same.</p><p> See more <a href="Polyline14/ReadmeEn.html">details at ...</a></p>
+</body></html>

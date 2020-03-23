@@ -1,0 +1,15 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+#include @"HumanInterface.ph"
+
+% privately used packages
+
+% private interfaces
+
+% private classes
+
+% implementations
+#requires @"HumanInterface.lib"

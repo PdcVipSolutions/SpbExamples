@@ -1,0 +1,21 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"main.ph"
+
+% privately used packages
+#include @"packs\logic\PzlSystem\OpenPzl\PzlSupport\pzlPort.ph"
+#include @"TaskWindow\TaskWindow.ph"
+#include @"Game\Game.ph"
+#include @"pfc\application\exe\exe.ph"
+#include @"pfc\exception\exception.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+#include @"main.pro"

@@ -1,0 +1,25 @@
+/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+SpbSolutions/Examples/Polyline
+******************************************************************************/
+
+#include @"JuniourJudge\PzlJuniourJudge.ph"
+
+#include @"pfc\exception\exception.ph"
+#include @"pfc\string\string.ph"
+
+
+#if iPzlConfig::usePzlJuniourJudgeOriginal_C=true #then
+% privately used packages
+#include @"pfc\stream\stream.ph"
+#include @"JuniourJudge\JuniourJudge.ph"
+
+% private interfaces
+
+% private classes
+
+% implementations
+    #include @"JuniourJudge\PzlJuniourJudge.pro"
+#else    
+    #include @"JuniourJudge\PzlJuniourJudgeProxy.pro"
+#endif

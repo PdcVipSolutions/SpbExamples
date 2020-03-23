@@ -48,9 +48,9 @@ clauses
         catch _TraceID do
             OldColor=0x0000FF00
         end try,
-        NewColor=vpiCommonDialogs::getColor(getVpiWindow(),OldColor),
+        NewColor=vpiCommonDialogs::getColor(getVpiWindow(),convert(color,OldColor)),
         !,
-        playerLegendIC_ctl:setInteger(NewColor),
+        playerLegendIC_ctl:setInteger(convert(integer,NewColor)),
         legendDrawControl_ctl:setColor(NewColor),
         legendDrawControl_ctl:invalidate().
     onBrowseLegendPBClick(_Source) = button::defaultAction.
@@ -106,7 +106,7 @@ clauses
     setPlayer(PlayerObject):-
         playerNameEC_ctl:setText(PlayerObject:name),
         playerLegendIC_ctl:setInteger(PlayerObject:legend_V),
-        legendDrawControl_ctl:setColor(PlayerObject:legend_V),
+        legendDrawControl_ctl:setColor(convert(color,PlayerObject:legend_V)),
         Attributes=PlayerObject:getAttributes(),
         modelAttributeIC_ctl:setVisible(false),
         attributeNameTC_ctl : setVisible(false),

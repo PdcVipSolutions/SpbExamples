@@ -248,9 +248,9 @@ clauses
         starter_ctl:setEnabled(TrueIfEnable),
         multiMode_ctl:setEnabled(TrueIfEnable),
         if TrueIfEnable=true then
-            startPB_ctl:setText(This:getText(run_S))
+            startPB_ctl:setText(getText(run_S))
         else
-            startPB_ctl:setText(This:getText(stop_S))
+            startPB_ctl:setText(getText(stop_S))
         end if.
 
 clauses
@@ -261,17 +261,17 @@ clauses
         try
             StarterName=HumanInterface:logicProvider_V:seniourJudge_V:starter_V:name
         catch _TraceID do
-            StarterName=This:getText(auto_S)
+            StarterName=getText(auto_S)
         end try,
-        starterTitle_ctl:setText(string::concat(This:getText(starter_S),StarterName)),
+        starterTitle_ctl:setText(string::concat(getText(starter_S),StarterName)),
         startPB_ctl:setEnabled(true()).
     showStarterName():-
         HumanInterface=convert(humanInterface,getConsoleRoot()),
         try
-            starterTitle_ctl:setText(string::concat(This:getText(starter_S),HumanInterface:logicProvider_V:seniourJudge_V:starter_V:name)),
+            starterTitle_ctl:setText(string::concat(getText(starter_S),HumanInterface:logicProvider_V:seniourJudge_V:starter_V:name)),
             startPB_ctl:setEnabled(true())
         catch _TraceID do
-            starterTitle_ctl:setText(This:getText(startedNotAssigned_S)),
+            starterTitle_ctl:setText(getText(startedNotAssigned_S)),
             startPB_ctl:setEnabled(false())
         end try.
 

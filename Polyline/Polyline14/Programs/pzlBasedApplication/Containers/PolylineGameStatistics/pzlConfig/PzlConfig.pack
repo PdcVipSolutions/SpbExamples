@@ -1,0 +1,13 @@
+﻿/*****************************************************************************
+Copyright (c) Victor Yukhtenko
+******************************************************************************/
+#include @"packs\logic\pzlSystem\openPzl\packs\PzlConfig.ph"
+
+#include @"pfc\string\string.ph"
+
+% ONLY package headers IMPLEMENTED in this Container (originals) must be included below
+% privately used packages
+#include @"GameStatistics\PzlGameStatistics.ph"
+
+% implementations
+#include @"PzlConfig\PzlConfig.pro"

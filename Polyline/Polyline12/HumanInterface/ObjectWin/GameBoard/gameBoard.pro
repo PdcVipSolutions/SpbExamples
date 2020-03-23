@@ -36,7 +36,7 @@ facts
 
 clauses
     onMove(_Request,_Agency,_PlayerObj,string(polylineDomains::initialExternalMove_C),string(CellStr)):-
-        lastMove_V:=legendedMove(toTerm(CellStr),polylineDomains::juniourJudgeMove_C),
+        lastMove_V:=legendedMove(toTerm(CellStr),convert(color,polylineDomains::juniourJudgeMove_C)),
         lastMove_V=legendedMove(c(CellX,CellY),_legendedMoveColor),
         !,
         getBoardDrawParameters(Step,_WidthPxl,_HeightPxl),
@@ -48,7 +48,7 @@ clauses
             lastMove_V=legendedMove(Move,Color),
             addMove(Move,Color)
         end if,
-        lastMove_V:=legendedMove(toTerm(CellStr),Player:legend_V),
+        lastMove_V:=legendedMove(toTerm(CellStr),convert(color,Player:legend_V)),
         lastMove_V=legendedMove(c(CellX,CellY),_legendedMoveColor),
         !,
         getBoardDrawParameters(Step,_WidthPxl,_HeightPxl),
@@ -56,7 +56,7 @@ clauses
         _IsSuccessful = vpi::processEvents().
     onMove(_Request,_Agency,PlayerObj,string(polylineDomains::winnerMove_C),string(CellStr)):-
         Player=convert(player,PlayerObj),
-        winnerMove_V:=legendedMove(toTerm(CellStr),Player:legend_V),
+        winnerMove_V:=legendedMove(toTerm(CellStr),convert(color,Player:legend_V)),
         winnerMove_V=legendedMove(c(CellX,CellY),_legendedMoveColor),
         !,
         getBoardDrawParameters(Step,_WidthPxl,_HeightPxl),
@@ -200,7 +200,7 @@ clauses
     drawPointer(GDIObject,CellSize):-
         GDIObject:setBrush(vpiDomains::brush (vpiDomains::pat_Hollow,vpiDomains::color_gray)),
         if not(isErroneous(gameStatus_V)) and gameStatus_V=polylineDomains::humanMove(Player) then
-                GDIObject:setPen(pen(2,ps_Solid,Player:legend_V))
+                GDIObject:setPen(pen(2,ps_Solid,convert(color,Player:legend_V)))
         else
             if focus_V=true then
                 GDIObject:setPen(pen(2,ps_Solid,vpiDomains::color_black))
