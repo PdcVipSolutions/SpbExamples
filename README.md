@@ -1,9 +1,9 @@
 # SpbExamples
 **Open Source (MIT license)**
 
-Created using Visual Prolog v.9 build 902 
+Created using Visual Prolog v.9 build 904 
 
-**SpbExamples v.3.0 contains:**
+**SpbExamples v.3.1 contains:**
 
 - Polyline (variants 1-14) - an easy plain game
 >New: Variant 14 - WinGui implemented as the set of Pzl-components
